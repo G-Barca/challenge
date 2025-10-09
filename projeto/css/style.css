@@ -1,0 +1,94 @@
+/**********************************/
+/* PALETA DE CORES: */
+/* #66C845 Verde */
+/* #F68B1E Laranja */
+/* #333333 Cinza */
+/* #FFFFFF Branco */
+/**********************************/
+
+html {
+  background-color: #f3eeee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+  border-bottom: 3px solid #66C845;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.imagemh1 {
+  width: 60px;
+  height: 60px;
+  border: solid 2px #66C845;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.logo-container:hover .imagemh1 {
+  transform: scale(1.05);
+}
+
+.logo-text {
+  opacity: 0;
+  color: #66C845;
+  font-weight: bold;
+  font-size: 20px;
+  transition: opacity 0.4s ease;
+}
+
+.logo-container:hover .logo-text {
+  opacity: 1;
+}
+
+/* MENU */
+
+.menu {
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.menu a {
+  background-color: #F68B1E;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 2px solid #333333;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #ffffff;
+  color: #F68B1E;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVIDADE */
+ @media (min-width: 992px) {
+    
+ }
