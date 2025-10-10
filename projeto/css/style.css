@@ -144,10 +144,7 @@ integrantesimg{
   text-align: justify;
 }
 
-.sobre p {
-  font-size: 18px;
-  line-height: 1.6;
-}
+
 
 
 /* ===== FOOTER ===== */
@@ -171,5 +168,32 @@ footer {
   }
 }
 
-/* sobre */
+/* ===== SOBRE ===== */
 
+.sobre p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ===== CONTATO ===== */
+
+.githubs {
+  display: flex;             
+  justify-content: center;    
+  align-items: center;        
+  gap: 20px; 
+         
+}
+
+.githubs img{
+width: 100px;              
+height: 100px;    
+
+}
+
+.btns{
+border-radius: 300px;
+border-width: 70px;
+
+
+}
