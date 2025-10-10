@@ -1,16 +1,17 @@
-/**********************************/
-/* PALETA DE CORES 
-/* #66C845 Verde 
-/* #F68B1E Laranja 
-/* #333333 Cinza 
-/* #FFFFE0 Amarelo claro 
+/**********************************
+  PALETA DE CORES
+  #66C845 - Verde 
+  #F68B1E - Laranja 
+  #333333 - Cinza 
+  #FFFFE0 - Amarelo claro
+**********************************/
 
-/**********************************/
 
 html {
   background-color: #FFFFE0;
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 body {
@@ -74,7 +75,7 @@ body {
 }
 
 .menu a {
-  background-color: #F68B1E; 
+  background-color: #F68B1E;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -84,26 +85,45 @@ body {
   transition: all 0.3s ease;
 }
 
-.btncadastro{
+.menu a.active {
+  background-color: #F68B1E;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu a:hover {
+  background-color: #fff;
+  color: #F68B1E;
+  transform: scale(1.05);
+}
+
+.btncadastro {
   padding-left: 90px;
   margin-left: 150px;
 }
- 
-/* ===== Imagens MENU ===== */
+
+/* ===== CONTEÚDO ===== */
+.conteudo {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: justify;
+}
+
+
 .acoes {
   display: flex;
-  flex-direction:row; 
+  flex-direction: row;
   align-items: center;
   gap: 40px;
 }
 
 .acao {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   text-align: center;
   max-width: 600px;
-  
 }
 
 .imagem {
@@ -117,35 +137,6 @@ body {
   object-fit: cover;
 }
 
-/* ===== Imagens MENU ===== */
-integrantesimg{
-  margin: 90px;
-}
-
-.menu a.active {
-  background-color: #F68B1E; 
-  color: #fff;
-  cursor: pointer;
-}
-
-
-.menu a:hover {
-  background-color: #fff;
-  color: #F68B1E;
-  transform: scale(1.05);
-}
-/* ===== MENU ===== */
-
-/* ===== CONTEÚDO ===== */
-.conteudo {
-  max-width: 900px;
-  margin: 50px auto;
-  padding: 0 20px;
-  text-align: justify;
-}
-
-
-
 
 /* ===== FOOTER ===== */
 footer {
@@ -153,7 +144,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #5f5a5a; 
+  background-color: #5f5a5a;
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -164,36 +155,51 @@ footer {
 @media (min-width: 992px) {
   .header {
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
   }
 }
 
-/* ===== SOBRE ===== */
-
+/* ===== PÁGINA SOBRE ===== */
 .sobre p {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 17px;
 }
+
 
 /* ===== CONTATO ===== */
 
 .githubs {
-  display: flex;             
-  justify-content: center;    
-  align-items: center;        
-  gap: 20px; 
-         
-}
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
 
-.githubs img{
-width: 100px;              
-height: 100px;    
+
 
 }
 
-.btns{
-border-radius: 300px;
-border-width: 70px;
+.pessoa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
+.pessoa img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.pessoa img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pessoa p {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #333;
 
 }
+

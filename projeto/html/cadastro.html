@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu</title>
+  <title>Cadastro</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
   <!-- ===== HEADER ===== -->
   <header class="header">
@@ -18,7 +19,7 @@
 
     <nav class="menu">
       <ul>
-        <li><a class="active" href="../html/sobre.html">Sobre</a></li>
+  <li><a href="../html/sobre.html">Sobre</a></li>
         <li><a href="../html/integrantes.html">Integrantes</a></li>
         <li><a href="../html/contato.html">Contato</a></li>
         <li><a href="../html/area_voluntario.html">Área do Voluntário</a></li>
@@ -29,19 +30,21 @@
   </header>
   <!-- ===== HEADER ===== -->
 
-<!-- ===== MAIN ===== -->
+  <!-- ===== MAIN ===== -->
   <main class="conteudo">
     <section class="index">
       <article>
-        <p>
-          <h1>Cadastro: </h1>
+        <h1>Cadastro</h1>
+        <h2>Insira seus dados:</h2>
+             <label for="nome">Nome:</label><br>
+          <input type="text"><br>
+
+          <label for="bdd">Data de Nascimento:</label><br>
+          <input type="text"><br>
+
+          <label for="email">Email:</label><br>
           
-        </p>
-        <p>
-           <label for="">Digite o seu nome: </label> 
-          <input type="nome">
-          <form action=""></form>
-        </p>
+          <input type="text" id="nome" name="nome" required>
       </article>
     </section>
   </main>
@@ -52,6 +55,5 @@
     <p>&copy; 2025 Turma do Bem. Todos os direitos reservados.</p>
   </footer>
   <!-- ===== FOOTER ===== -->
-
 </body>
 </html>
