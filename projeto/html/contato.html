@@ -36,14 +36,21 @@
       <article>
         <h2>Insira suas informações de contato:</h2>
       
-          <label for="nome">Nome:</label><br>
-          <input type="text"><br>
+          <form id="formContato" action="#" method="post">
 
-          <label for="cpf">CPF:</label><br>
-          <input type="text"><br>
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome" required><br><br>
 
-          <label for="email">Email:</label><br>
-          <input type="email"><br>
+  <label for="cpf">CPF:</label><br>
+  <input type="text" id="cpf" name="cpf" maxlength="14" required><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <button type="submit">Enviar</button>
+
+  <p id="erro" style="color:red; font-weight: bold;"></p>
+</form>
 
         <h2>Fale Conosco</h2>
         <img src="../img/tratamento.jpg" alt="Tratamento Odontológico" width="700" height="400">
