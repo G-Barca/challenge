@@ -209,12 +209,13 @@ footer {
 /* ===== AREA DO VOLUNTÁRIO =====*/
 
 .seja-voluntario{
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   padding-top: 100px;
-  padding-left: 200px;
+  padding-left: 50px;
   max-width: 100%;
   height: auto;
+  
  
 }
 
