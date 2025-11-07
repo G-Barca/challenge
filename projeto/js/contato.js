@@ -12,11 +12,15 @@ document.getElementById("formContato").addEventListener("submit", function(event
   } 
 
   
+
+
   if (cpf.length !== 11) {
     msgErro.textContent = "Digite um CPF válido com 11 dígitos.";
     event.preventDefault();
     return;
   }
+
+
 
   const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!regexEmail.test(email)) {
@@ -25,6 +29,7 @@ document.getElementById("formContato").addEventListener("submit", function(event
     return;
   }
 
+  
 
   event.preventDefault();
   document.getElementById("formContato").reset();
